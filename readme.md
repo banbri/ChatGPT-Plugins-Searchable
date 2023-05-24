@@ -1,7 +1,7 @@
 ## 项目简介
 
 - 告别一页一页查找的烦恼，官方不提供搜索，我们就自己实现！
-- 这个网站你可能感兴趣：[ChatGPT Plugin](https://chatgpt-plugins.banbri.cn/) [中文介绍网](https://chatgpt-plugins.banbri.cn/)
+- 这个网站你可能感兴趣：[ChatGPT Plugin 中文介绍网](https://chatgpt-plugins.banbri.cn/)
 - 如果你觉得这个脚本对你有帮助，可以点个⭐️STAR支持一下。
 
 ## 展示
@@ -21,7 +21,7 @@
 
 ## 赞赏
 
-- 如果本项目对你有帮助，节省了您的时间，可以考虑👇🏻
+- 如果本项目对你有帮助，节省了您的时间，可以考虑👇🏻。
 
-<img src="https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/1e94da09-12d3-47b7-85f0-e056b45fed22" width=“200"/>
-<img src="https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/b8d9470b-6a6f-49fa-85fb-e75888547eca" width=“200"/>
+<img src="https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/1e94da09-12d3-47b7-85f0-e056b45fed22" width="300"/>
+<img src="https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/b8d9470b-6a6f-49fa-85fb-e75888547eca" width="300"/>

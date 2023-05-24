@@ -6,7 +6,7 @@
 
 ![image](https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/95efd073-9448-4d60-b725-a243a0223e84)
 
-## 💽 安装助手
+## 使用引导
 
 请确保已先安装 [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) 脚本管理器
 

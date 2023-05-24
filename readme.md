@@ -1,3 +1,6 @@
+| [中文文档](https://github.com/banbri/ChatGPT-Plugins-Searchable/blob/main/readme.md) | [English README](https://github.com/banbri/ChatGPT-Plugins-Searchable/blob/main/README_EN.md) |
+| --- | --- |
+
 ## 项目简介
 
 - 告别一页一页查找的烦恼，官方不提供搜索，我们就自己实现！

@@ -1,3 +1,6 @@
+| [中文文档](https://github.com/banbri/ChatGPT-Plugins-Searchable/blob/main/readme.md) | [English README](https://github.com/banbri/ChatGPT-Plugins-Searchable/blob/main/README_EN.md) |
+| --- | --- |
+
 ## Project Description
 
 - Say goodbye to the frustration of searching page by page. If the OpenAI official doesn't provide a search function, we'll implement it ourselves!

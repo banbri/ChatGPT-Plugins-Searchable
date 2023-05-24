@@ -2,6 +2,8 @@
 
 ## Make your ChatGPT Plugin store searchable.
 
+### 这个网站你可能感兴趣：[ChatGPT Plugin 中文介绍网](https://chatgpt-plugins.banbri.cn/)
+
 ![image](https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/95efd073-9448-4d60-b725-a243a0223e84)
 
 ## 💽 安装助手
@@ -9,11 +11,6 @@
 请确保已先安装 [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) 脚本管理器
 
 之后到[这里](https://greasyfork.org/zh-CN/scripts/466901)点击安装此脚本。
-
-## 两个你可能感兴趣的网站
-
-- [ChatGPT 中文插件网](https://chatgpt-plugins.banbri.cn/)
-- [ChatPlugin.top，支持中文搜索插件](https://www.chatplugin.top/)
 
 ### 这个脚本会和 KeepChatGPT 冲突，如果你想使用这个脚本，请先暂时关闭 KeepChatGPT。
 ### 插件目前处于第一版，可能存在一些问题，欢迎提交 PR。

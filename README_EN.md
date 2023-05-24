@@ -18,5 +18,5 @@
 ## Installation Instructions
 
 - Please make sure you have installed the [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) script manager
-- Click [here](https://greasyfork.org/scripts/466901)to install this script.
+- Click [here](https://greasyfork.org/scripts/466901) to install this script.
 - Once installed, refresh the page for the changes to take effect.

@@ -21,6 +21,3 @@
 
 <img src="https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/1e94da09-12d3-47b7-85f0-e056b45fed22" width="300"/>
 <img src="https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/b8d9470b-6a6f-49fa-85fb-e75888547eca" width="300"/>
-
-![image](https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/1e94da09-12d3-47b7-85f0-e056b45fed22)
-![image](https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/b8d9470b-6a6f-49fa-85fb-e75888547eca)

@@ -15,6 +15,7 @@
 - [ChatGPT 中文插件网](https://chatgpt-plugins.banbri.cn/)
 - [ChatPlugin.top，支持中文搜索插件](https://www.chatplugin.top/)
 
+### 这个脚本会和 KeepChatGPT 冲突，如果你想使用这个脚本，请先暂时关闭 KeepChatGPT。
 ### 插件目前处于第一版，可能存在一些问题，欢迎提交 PR。
 ### 如果您觉得这个脚本对您有帮助，欢迎给我一个 Star ⭐
 ### 当然，你也可以给作者来杯咖啡。

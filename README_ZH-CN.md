@@ -3,7 +3,11 @@
 
 ## 展示
 
-![image](https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/1efa5c81-46e7-4172-9671-0160bcb049c1)
+直接在 ChatGPT 的官方 Plugin Store 界面显示一个搜索框，方便大家直接搜索插件，即搜即用，如下图所示。
+
+![脚本运行效果](https://wxdev.qabot.cn/plugin/img/install.01.png)
+
+![脚本搜索效果](https://wxdev.qabot.cn/plugin/img/install.02.png)
 
 ## 项目简介
 

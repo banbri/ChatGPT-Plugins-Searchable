@@ -19,7 +19,7 @@
 - 请确保已经安装 [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) 脚本管理器
 - 到[这里](https://greasyfork.org/zh-CN/scripts/466901)点击安装此脚本
 - 安装完成后刷新页面即生效
-- 详细安装教程可以点此查看：[安装教程](https://www.banbri.cn/2021/08/01/tampermonkey-install/](https://github.com/banbri/ChatGPT-Plugins-Searchable/blob/main/%E4%B8%AD%E6%96%87%E5%AE%89%E8%A3%85%E5%90%91%E5%AF%BC.md)
+- 详细安装教程可以点此查看：[安装教程](https://github.com/banbri/ChatGPT-Plugins-Searchable/blob/main/%E4%B8%AD%E6%96%87%E5%AE%89%E8%A3%85%E5%90%91%E5%AF%BC.md)
 
 ## 使用说明
 

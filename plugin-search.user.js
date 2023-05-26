@@ -1,14 +1,11 @@
 // ==UserScript==
-// @name         让你的 ChatGPT 插件商店支持搜索
-// @name:zh-CN   让你的 ChatGPT 插件商店支持搜索
-// @name:zh-TW   让你的 ChatGPT 插件商店支持搜索
-// @name:en      Make your ChatGPT Plugin store searchable.
+// @name         
 // @namespace    http://tampermonkey.net/
-// @version      0.0.1
-// @description  在 ChatGPT 插件商店里面添加搜索框，实现搜索！
-// @description:zh-CN  在 ChatGPT 插件商店里面添加搜索框，实现搜索！
-// @description:zh-TW  在 ChatGPT 插件商店里面添加搜索框，实现搜索！
-// @description:en  Add a search box in the ChatGPT Plugin store to achieve search!
+// @version      0.1.1
+// @description  让你的 ChatGPT 插件商店支持搜索，支持任何语言搜索，会和 KeepChatGPT 冲突。如果你想使用这个脚本，请先暂时关闭 KeepChatGPT。
+// @description:zh-CN  让你的 ChatGPT 插件商店支持搜索，支持任何语言搜索，会和 KeepChatGPT 冲突。如果你想使用这个脚本，请先暂时关闭 KeepChatGPT。
+// @description:zh-TW  让你的 ChatGPT 插件商店支持搜索，支持任何语言搜索，会和 KeepChatGPT 冲突。如果你想使用这个脚本，请先暂时关闭 KeepChatGPT。
+// @description:en  Make your ChatGPT Plugin store searchable.
 // @author       Banbri
 // @match        https://chat.openai.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=openai.com
@@ -296,6 +293,8 @@
           if (resultPlugins.length === 0) {
             cover.innerHTML = skeletonHtml.repeat(8)
             try {
+              // To support advanced search, including all language searches and natural language searches.
+              // Based on OpenAI GPT-3.5 embeddings 
               const response = await fetch('https://wxdev.qabot.cn/plugin/search.php?search=' + searchValue);
               const data = await response.json();
               const pluginIds = data.items.map((item) => item.id)

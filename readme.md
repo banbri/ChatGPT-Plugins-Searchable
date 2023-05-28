@@ -21,4 +21,4 @@
 
 ## Special Thanks
 
-- Some of the code and documentation for this project was taken from the [KeepChatGPT](https://github.com/xcanwin/KeepChatGPT/), and I would like to thank them for that.
+- Some of the code and documentation for this project refer to [KeepChatGPT](https://github.com/xcanwin/KeepChatGPT/), and I would like to thank them for that.

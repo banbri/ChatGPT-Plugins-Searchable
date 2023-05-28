@@ -26,4 +26,4 @@
 
 ## 微信交流群
 
-![](https://wxapi.qabot.cn/plugin/img/wegroup.jpeg)
+<img src="https://wxapi.qabot.cn/plugin/img/wegroup.jpeg" width="200">

@@ -3,7 +3,7 @@
 
 ## 展示
 
-(![image](https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/f3a857f2-ff18-4354-9a7d-4790be29a010)
+![image](https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/f3a857f2-ff18-4354-9a7d-4790be29a010)
 
 ## 项目简介
 

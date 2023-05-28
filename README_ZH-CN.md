@@ -23,3 +23,7 @@
 ## 特别感谢
 
 - 项目部分代码和部分文档参考了 [KeepChatGPT](https://github.com/xcanwin/KeepChatGPT/) 项目，特此感谢。
+
+## 微信交流群
+
+![](https://wxapi.qabot.cn/plugin/img/wegroup.jpeg)

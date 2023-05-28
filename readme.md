@@ -13,13 +13,12 @@
 - The search interface is from ChatPlugin.top.
 - If you find this script helpful, you can show your support by giving it a ⭐️STAR.
 
-## Usage Instructions
-
-- This script conflicts with KeepChatGPT. If you want to use this script, please temporarily disable KeepChatGPT.
-- The plugin is currently in version one and may have some issues. If you encounter any problems, feel free to submit an issue or pull request.
-
 ## Installation Instructions
 
 - Please make sure you have installed the [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) script manager
 - Click [here](https://greasyfork.org/scripts/466901) to install this script.
 - Once installed, refresh the page for the changes to take effect.
+
+## Special Thanks
+
+- Some of the code and documentation for this project was taken from the [KeepChatGPT](https://github.com/xcanwin/KeepChatGPT/), and I would like to thank them for that.

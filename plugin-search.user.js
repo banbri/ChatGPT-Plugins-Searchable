@@ -1,22 +1,22 @@
 // ==UserScript==
-// @name         
+// @name         ChatGPT-Plugins-Searchable
 // @namespace    http://tampermonkey.net/
-// @version      0.1.1
-// @description  让你的 ChatGPT 插件商店支持搜索，支持任何语言搜索，会和 KeepChatGPT 冲突。如果你想使用这个脚本，请先暂时关闭 KeepChatGPT。
-// @description:zh-CN  让你的 ChatGPT 插件商店支持搜索，支持任何语言搜索，会和 KeepChatGPT 冲突。如果你想使用这个脚本，请先暂时关闭 KeepChatGPT。
-// @description:zh-TW  让你的 ChatGPT 插件商店支持搜索，支持任何语言搜索，会和 KeepChatGPT 冲突。如果你想使用这个脚本，请先暂时关闭 KeepChatGPT。
-// @description:en  Make your ChatGPT Plugin store searchable.
+// @version      1.0.0
+// @description  让你的 ChatGPT 插件商店支持搜索，支持任何语言搜索，甚至支持语义化搜索。
+// @description:zh-CN  让你的 ChatGPT 插件商店支持搜索，支持任何语言搜索，甚至支持语义化搜索。
+// @description:zh-TW  让你的 ChatGPT 插件商店支持搜索，支持任何语言搜索，甚至支持语义化搜索。
+// @description:en  Make your ChatGPT Plugin store searchable, any language search, and even semantic search.
 // @author       Banbri
 // @match        https://chat.openai.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=openai.com
 // @grant        unsafeWindow
-// @homepage          https://github.com/banbri/ChatGPT-Plugins-Searchable
+// @homepage          https://chatgpt-plugins.banbri.cn
 // @supportURL        https://github.com/banbri/ChatGPT-Plugins-Searchable
 // @run-at       document-end
 // @license      MIT
 // ==/UserScript==
 
-; (function () {
+;(function () {
   const constantMock = unsafeWindow.fetch
 
   const uninstalledBtn = `
@@ -131,7 +131,8 @@
   unsafeWindow.fetch = function () {
     const response = constantMock.apply(this, arguments)
     if (
-      arguments[0].indexOf('https://chat.openai.com/backend-api/aip/p') > -1
+      arguments[0].indexOf('https://chat.openai.com/backend-api/aip/p') > -1 &&
+      arguments[0].includes('statuses=approved')
     ) {
       token = arguments[1].headers.Authorization
       response
@@ -143,7 +144,7 @@
               plugins = body.items
             })
         })
-        .catch((err) => { })
+        .catch((err) => {})
     }
     return response
   }
@@ -181,8 +182,8 @@
     }
 
     var observerOptions = {
-      childList: true
-    };
+      childList: true,
+    }
 
     var observer = new MutationObserver(function (mutations) {
       mutations.forEach(function (mutation) {
@@ -197,10 +198,10 @@
             }
           }
         }
-      });
-    });
+      })
+    })
 
-    observer.observe(shadow.parentNode, observerOptions);
+    observer.observe(shadow.parentNode, observerOptions)
   }
 
   function main() {
@@ -253,8 +254,10 @@
           const search = document.querySelector('#search')
           const searchValue = search.value
 
-          // 查询 element 下所有的直属 .btn
-          const buttons = Array.from(element.querySelectorAll('.btn')).slice(0, -1)
+          const buttons = Array.from(element.querySelectorAll('.btn')).slice(
+            0,
+            -1,
+          )
           buttons.forEach((item) => {
             item.classList.remove('btn-light')
             item.classList.add('btn-neutral')
@@ -273,14 +276,20 @@
 
           // Create a div
           const cover = document.createElement('div')
-          cover.setAttribute('class', 'absolute top-0 left-0 w-full h-full grid grid-cols-1 gap-3 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-3 xl:grid-cols-4 bg-white')
+          cover.setAttribute(
+            'class',
+            'absolute top-0 left-0 w-full h-full grid grid-cols-1 gap-3 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-3 xl:grid-cols-4 bg-white dark:bg-gray-900',
+          )
           cover.setAttribute('id', 'cover')
           cover.setAttribute('style', 'z-index: 999;')
 
           pluginContainer.appendChild(cover)
 
-          let resultPlugins = plugins.filter(
-            (item) => item.manifest.name_for_human.toLowerCase().replace(/\s/g, '').includes(searchValue.toLowerCase().replace(/\s/g, ''))
+          let resultPlugins = plugins.filter((item) =>
+            item.manifest.name_for_human
+              .toLowerCase()
+              .replace(/\s/g, '')
+              .includes(searchValue.toLowerCase().replace(/\s/g, '')),
           )
 
           if (searchValue === '') {
@@ -294,14 +303,24 @@
             cover.innerHTML = skeletonHtml.repeat(8)
             try {
               // To support advanced search, including all language searches and natural language searches.
-              // Based on OpenAI GPT-3.5 embeddings 
-              const response = await fetch('https://wxdev.qabot.cn/plugin/search.php?search=' + searchValue);
-              const data = await response.json();
+              // Based on OpenAI GPT-3.5 embeddings.
+              const response = await fetch(
+                'https://wxapi.qabot.cn/plugin/search.php?search=' +
+                  searchValue,
+              )
+              const data = await response.json()
               const pluginIds = data.items.map((item) => item.id)
-              resultPlugins = plugins.filter((item) => pluginIds.includes(item.id))
+              resultPlugins = plugins.filter((item) =>
+                pluginIds.includes(item.id),
+              )
+
+              resultPlugins.forEach((currentItem) => {
+                currentItem.manifest.description_for_human_cn =
+                  data.items.find((item) => item.id === currentItem.id)
+                    ?.manifest?.description_for_human_cn || ''
+              })
               cover.innerHTML = ''
-            } catch (error) {
-            }
+            } catch (error) {}
           }
 
           if (resultPlugins.length > 8) {
@@ -309,8 +328,24 @@
           }
 
           resultPlugins.forEach((plugin) => {
-            const { name_for_human, description_for_human, logo_url } = plugin.manifest
-            const { id, user_settings: { is_installed } } = plugin
+            const {
+              name_for_human,
+              description_for_human,
+              logo_url,
+              description_for_human_cn,
+            } = plugin.manifest
+            const {
+              id,
+              user_settings: { is_installed },
+            } = plugin
+            const userLanguage = navigator.language || navigator.userLanguage
+            const isZh = userLanguage.toLowerCase().indexOf('zh') !== -1
+
+            let description = description_for_human
+            // 判断语言是否为中文
+            if (isZh && description_for_human_cn) {
+              description = description_for_human_cn
+            }
 
             cover.innerHTML += `
               <div
@@ -332,7 +367,7 @@
                   </div>
                 </div>
                 <div class="h-[60px] text-sm text-black/70 line-clamp-3 dark:text-white/70">
-                  ${description_for_human}
+                  ${description}
                 </div>
               </div>
             `
@@ -350,12 +385,14 @@
             const id = item.parentElement.dataset.id
             const is_installed = item.parentElement.dataset.installed === 'true'
 
-            item.outerHTML = is_installed ? uninstallPendingBtn : installPendingBtn
+            item.outerHTML = is_installed
+              ? uninstallPendingBtn
+              : installPendingBtn
             try {
               const result = await fetch(
                 'https://chat.openai.com/backend-api/aip/p/' +
-                id +
-                '/user-settings',
+                  id +
+                  '/user-settings',
                 {
                   method: 'PATCH',
                   headers: {
@@ -365,13 +402,14 @@
                   body: JSON.stringify({
                     is_installed: !is_installed,
                   }),
-                }
-              );
-              await result.clone().json();
-              const newItem = document.querySelector('[data-id="' + id + '"] button');
-              newItem.outerHTML = is_installed ? installedBtn : uninstalledBtn;
-            } catch (error) {
-            }
+                },
+              )
+              await result.clone().json()
+              const newItem = document.querySelector(
+                '[data-id="' + id + '"] button',
+              )
+              newItem.outerHTML = is_installed ? installedBtn : uninstalledBtn
+            } catch (error) {}
           }
         })
       })

@@ -5,16 +5,13 @@
 
 直接在 ChatGPT 的官方 Plugin Store 界面显示一个搜索框，方便大家直接搜索插件，即搜即用，如下图所示。
 
-![脚本运行效果](https://wxdev.qabot.cn/plugin/img/install.01.png)
-
-![脚本搜索效果](https://wxdev.qabot.cn/plugin/img/install.02.png)
+![脚本运行效果](https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/2d2a9bd1-c0a8-4182-b0f8-0ae53693dfaf)
 
 ## 项目简介
 
 - 这个脚本专门为 ChatGPT Plus 用户服务，给 ChatGPT 插件商店添加一个搜索功能。
 - 告别一页一页查找的烦恼，官方不提供搜索，我们就自己实现！
-- 底层使用 OpenAI GPT-3.5 embeddings 接口，支持任意语言进行搜索。
-- 搜索接口来自于 [ChatPlugin.top](https://ChatPlugin.top/?plugin)
+- 底层使用 OpenAI GPT-3.5 embeddings 接口来自于 [ChatPlugin.top](https://ChatPlugin.top/?plugin)，支持任意语言甚至语义化搜索。
 - 这个网站你可能感兴趣：[ChatGPT Plugin 中文介绍网](https://chatgpt-plugins.banbri.cn/)
 - 如果你觉得这个脚本对你有帮助，可以点个⭐️STAR支持一下。
 
@@ -25,7 +22,6 @@
 - 安装完成后刷新页面即生效
 - 详细安装教程可以点此查看：[安装教程](https://github.com/banbri/ChatGPT-Plugins-Searchable/blob/main/%E4%B8%AD%E6%96%87%E5%AE%89%E8%A3%85%E5%90%91%E5%AF%BC.md)
 
-## 使用说明
+## 特别感谢
 
-- 这个脚本会和 KeepChatGPT 冲突，如果你想使用这个脚本，请先暂时关闭 KeepChatGPT。
-- 使用脚本过程中遇到问题欢迎提交 Issue 和 PR。
+- 项目部分代码和部分文档参考了 [KeepChatGPT](https://github.com/xcanwin/KeepChatGPT/) 项目，特此感谢。

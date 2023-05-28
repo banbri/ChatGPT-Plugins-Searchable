@@ -3,8 +3,6 @@
 
 ## 展示
 
-直接在 ChatGPT 的官方 Plugin Store 界面显示一个搜索框，方便大家直接搜索插件，即搜即用，如下图所示。
-
 ![脚本运行效果](https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/2d2a9bd1-c0a8-4182-b0f8-0ae53693dfaf)
 
 ## 项目简介

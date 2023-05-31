@@ -3,7 +3,8 @@
 
 ## Preview
 
-![image](https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/63570a76-a508-47ca-b3b4-6cb9c635a400)
+![Snipaste_2023-05-27_16-40-13](https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/433b5e4e-35ad-4dbf-8074-c9effff79ff8)
+
 
 ## Project Description
 

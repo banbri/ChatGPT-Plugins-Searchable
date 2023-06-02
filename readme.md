@@ -22,4 +22,4 @@
 
 ## 微信交流群
 
-<img src="[https://wxapi.qabot.cn/plugin/img/wegroup.jpeg](https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/ed6e1c87-0e10-49be-9b91-39dcc76d81a8)" width="200">
+<img src="https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/ed6e1c87-0e10-49be-9b91-39dcc76d81a8" width="200">

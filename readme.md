@@ -1,6 +1,6 @@
 ## 展示
 
-![image](https://user-images.githubusercontent.com/44187480/242299816-209d053f-cc6b-43ea-ada5-e70259717bc9.png)
+![image](https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/8be84c53-0497-40f8-b2a3-619b0425b819)
 
 ## 项目简介
 

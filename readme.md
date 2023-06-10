@@ -22,4 +22,4 @@
 
 ## 微信交流群
 
-<img src="https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/ed6e1c87-0e10-49be-9b91-39dcc76d81a8" width="200">
+<img src="https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/d1aa6a70-731a-497f-8144-3f0c186b6f41" width="200">

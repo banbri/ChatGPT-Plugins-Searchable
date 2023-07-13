@@ -20,6 +20,3 @@
 
 - 项目部分代码和部分文档参考了 [KeepChatGPT](https://github.com/xcanwin/KeepChatGPT/) 项目，特此感谢。
 
-## 微信交流群
-
-<img src="https://github.com/banbri/ChatGPT-Plugins-Searchable/assets/44187480/61a1cc90-2edc-4c81-9444-404435ccc078" width="200">
